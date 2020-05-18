@@ -12,6 +12,8 @@ using Leave_Management_Project.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Leave_Management_Project.Contracts;
+using Leave_Management_Project.Repository;
 
 namespace Leave_Management_Project
 {
@@ -30,6 +32,13 @@ namespace Leave_Management_Project
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
+
+            //////Add references for Repository and Contracts to startup file/////////////
+            services.AddScoped<ILeaveTypeRepository, LeaveTypeRepository>();
+            services.AddScoped<ILeaveAllocationRepository, LeaveAllocationRepository>();
+            services.AddScoped<ILeaveHistoryRepository, LeaveHistoryRepository>();
+            /////////////////////////////////////////////////////////////////////////////
+
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();
