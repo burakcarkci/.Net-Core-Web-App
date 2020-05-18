@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "kIZ56aINBYXj/YNJqU+n4hgZcFtzJeKY3Svlq/s4spPaUFrh/5mRzNQOkn3RjRjAwB/wsaskSiCUDNiSCWYU1Q==",
+  "dgSpecHash": "f/K2UrEb7UaEFgxLntw9Vthxhklqib7M9LyeWW3AjA/hRuu4x0aH13k5U9VYfoaAFIZ6T9XMj9CSLvEoSmw1GA==",
   "success": true,
   "projectFilePath": "C:\\git\\.Net-Core-Web-App\\Leave-Management-Project\\Leave-Management-Project.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Burak\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
+    "C:\\Users\\Burak\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\7.0.0\\automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",
     "C:\\Users\\Burak\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.3\\microsoft.aspnetcore.cryptography.internal.3.1.3.nupkg.sha512",
     "C:\\Users\\Burak\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.3\\microsoft.aspnetcore.cryptography.keyderivation.3.1.3.nupkg.sha512",
     "C:\\Users\\Burak\\.nuget\\packages\\microsoft.aspnetcore.diagnostics.entityframeworkcore\\3.1.3\\microsoft.aspnetcore.diagnostics.entityframeworkcore.3.1.3.nupkg.sha512",

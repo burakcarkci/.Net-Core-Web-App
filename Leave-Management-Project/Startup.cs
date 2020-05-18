@@ -14,6 +14,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Leave_Management_Project.Contracts;
 using Leave_Management_Project.Repository;
+using AutoMapper;
+using Leave_Management_Project.Mappings;
 
 namespace Leave_Management_Project
 {
@@ -38,6 +40,10 @@ namespace Leave_Management_Project
             services.AddScoped<ILeaveAllocationRepository, LeaveAllocationRepository>();
             services.AddScoped<ILeaveHistoryRepository, LeaveHistoryRepository>();
             /////////////////////////////////////////////////////////////////////////////
+
+            //////////////AutoMapper//////////////////////////////////////////////////////
+            services.AddAutoMapper(typeof(Maps));
+            //////////////////////////////////////////////////////////////////////////////
 
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
