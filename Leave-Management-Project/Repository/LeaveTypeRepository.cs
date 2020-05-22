@@ -43,6 +43,12 @@ namespace Leave_Management_Project.Repository
             throw new NotImplementedException();
         }
 
+        public bool isExists(int id)
+        {
+            var exists = _db.LeaveTypes.Any(q => q.Id == id);
+            return exists;
+        }
+
         //Return changes if change is true
         public bool Save()
         {
