@@ -1,6 +1,6 @@
 # Core Leave Management
 .NET Core Leave Management Application is a personal project to learn .Net Core in depth 
-What will I cover:
+# What will I cover
 - Build a fully data driven web application using cutting edge technology 
 - Connect to a Database using Entity Framework Core
 - Repository Pattern and Dependency Injection
