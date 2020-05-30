@@ -2,7 +2,7 @@
 
 ![Project Image](https://i.ibb.co/RHX1fNX/Leave-Management.png)
 
-.NET Core Leave Management Application is a personal project to learn .Net Cor:  in depth
+.NET Core Leave Management Application is a personal project to learn .Net Core  in depth
  
 # What will I work on?
 - Build a fully data driven web application using cutting edge technology 
