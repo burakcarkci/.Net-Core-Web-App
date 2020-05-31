@@ -16,3 +16,14 @@
 - Manage Packages with NuGet Manager
 - Implement Website Layout using AdminLTE Theme
 - GitHub for Source Control
+
+# Technologies
+- .NET Core 3.1
+- C#
+- SQL Server
+- AutoMapper
+- Entity Framework, Code First
+- Repository Pattern
+- Identity and Authentication
+- Bootstrap 4
+- Admin LTE Theme
