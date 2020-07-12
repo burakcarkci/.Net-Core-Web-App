@@ -14,6 +14,8 @@ namespace Leave_Management_Project.Data
         [Required]
         public string Name { get; set; }
 
+        public int DefaultDays { get; set; }
+
         public DateTime DateCreated { get; set; }
     }
 }

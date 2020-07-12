@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -11,11 +12,10 @@ namespace Leave_Management_Project.Models
     public class LeaveAllocationViewModel
     {
         public int Id { get; set; }
-
-        [Required]
         public int NumberOfDays { get; set; }
 
         public DateTime DateCreated { get; set; }
+        public int Period { get; set; }
 
         public EmployeeViewModel Employee { get; set; }
 
@@ -27,5 +27,28 @@ namespace Leave_Management_Project.Models
 
         public IEnumerable<SelectListItem> Employees { get; set; }
         public IEnumerable<SelectListItem> LeaveTypes { get; set; }
+    }
+
+    public class CreateLeaveAllocationViewModel
+    {
+        public int NumberUpdated { get; set; }
+        public List<LeaveTypeViewModel> LeaveTypes { get; set; }
+    }
+
+    public class EditLeaveAllocationViewModel
+    {
+        public int Id { get; set; }
+        public EmployeeViewModel Employee { get; set; }
+        public string EmployeeId { get; set; }
+        [Display(Name = "Number of Days")]
+        public int NumberOfDays { get; set; }
+        public LeaveTypeViewModel LeaveType { get; set; }
+    }
+
+    public class ViewAllocationsViewModel
+    {
+        public EmployeeViewModel Employee { get; set; }
+        public string EmployeeId { get; set; }
+        public List<LeaveAllocationViewModel> LeaveAllocations { get; set; }
     }
 }
