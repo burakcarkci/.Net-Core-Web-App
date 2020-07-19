@@ -225,3 +225,4 @@ C:\git\.Net-Core-Web-App\Leave-Management-Project\obj\Debug\netcoreapp3.1\Razor\
 C:\git\.Net-Core-Web-App\Leave-Management-Project\obj\Debug\netcoreapp3.1\Razor\Views\LeaveAllocation\ListEmployees.cshtml.g.cs
 C:\git\.Net-Core-Web-App\Leave-Management-Project\obj\Debug\netcoreapp3.1\Razor\Views\LeaveAllocation\Details.cshtml.g.cs
 C:\git\.Net-Core-Web-App\Leave-Management-Project\obj\Debug\netcoreapp3.1\Razor\Views\LeaveAllocation\Edit.cshtml.g.cs
+C:\git\.Net-Core-Web-App\Leave-Management-Project\obj\Debug\netcoreapp3.1\Razor\Views\LeaveRequest\Index.cshtml.g.cs
